@@ -1,0 +1,212 @@
+:root {
+--text-color:#f7eff4 ;
+--backcolor-card:#F1948A ;
+--backcolor-body:#F6DDCC ;
+--colorbutton:#E2067B ;
+--gradientbuttoncolor:#CF208A ;
+--backcolor-card-cont:#CA1580  ;
+--gradientbuttoncolor-cont:#FFC300 ;
+
+}
+
+body{
+    background-color: var(--backcolor-body);
+  
+}
+
+.gift-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 650px;
+}
+
+.gift-card-container{
+    width: 400px;
+    height: 250px;
+    padding: 7%;
+    background: linear-gradient(to bottom, var(--backcolor-card),var(--gradientbuttoncolor));
+    border-radius: 15px;
+    margin-top: 10%;
+}
+
+
+.tittle {
+    color: var(--text-color) ;
+    font-family:'Montserrat', sans-serif;
+    border-bottom: 2px solid white ;
+    height: 50px;
+}
+
+.text {
+    color: var(--text-color);
+    font-family:'Montserrat', sans-serif;
+    
+
+}
+
+.button-send {
+    background-color: white;
+    color: black;
+    border: 2px solid var(--colorbutton);
+    width: 200px;
+    height: 40px;
+    border-radius:10px;
+    font-family:'Montserrat', sans-serif;
+}
+
+.button-send:hover{
+    background-color: #A20157 ; 
+    color: white;
+    padding-top: 3px;
+}
+
+
+
+
+.option-card{
+    position: fixed;
+    visibility:hidden;
+    opacity: 0;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+    
+.container-option-card{
+    justify-content: center;
+    width: 500px;
+    height: 250px;
+    padding: 30px;
+    background-color: var(--backcolor-body) ;
+    background: linear-gradient(to bottom, var(--backcolor-card-cont),var(--gradientbuttoncolor-cont));
+    border-radius: 15px;
+    margin: 1rem;
+    box-shadow: 20px 10px 5px  palevioletred;
+    
+}
+
+.text-container-option-card{
+    padding: 35px;
+}
+
+
+.tittle-container-option{
+    color: var(--text-color) ;
+    font-family:'Montserrat', sans-serif;
+    border-bottom: 2px solid white ;
+    height: 50px;
+    
+}
+
+.text-container-option {
+    color: var(--text-color);
+    font-family:'Montserrat', sans-serif;
+    
+
+}
+.text-bar-container-option{ 
+    border-radius: 10px;
+    width: 400px;
+    height: 35px;
+    border:var(--colorbutton);
+    outline-color: transparent; 
+    outline-style: none;
+    font-family:'Montserrat', sans-serif;
+    color:#920D5B;
+
+}
+
+.buttons-option-container{
+margin-top: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.buttons-option-container button {
+    background-color: white;
+    color: var(--colorbutton);
+    border: 2px solid var(--colorbutton);
+    width: 200px;
+    height: 40px;
+    border-radius:10px;
+    font-family:'Montserrat', sans-serif;
+}
+
+.continue-button-container-option {
+    margin-left: 5px;
+}
+.continue-button-container-option:hover{
+    background-color: var(--colorbutton) ; 
+    color: white;
+    padding-top: 3px;
+}
+
+.cancel-button-container-option {
+    margin-right: 5px;
+}
+
+.cancel-button-container-option:hover {
+    background-color: #A20157 ; 
+    color: white;
+    padding-top: 3px;
+}
+
+.error-message{
+    color: red;
+    visibility:hidden;
+    opacity: 0;
+    font-family:'Montserrat', sans-serif;
+    font-size: x-small;
+}
+
+
+
+
+    
+.container-message-sent{
+    visibility:hidden;
+    opacity: 0;
+    justify-content: center;
+    width: 500px;
+    height: 250px;
+    padding: 30px;
+    background-color: var(--backcolor-body) ;
+    border-radius: 15px;
+
+    margin-inline: auto;
+    padding-bottom: 90px;
+    
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-container-message-sent{
+    padding: 35px;
+}
+
+.tittle-message-sent {
+    color: var(--backcolor-card-cont) ;
+    font-family:'Montserrat', sans-serif;
+    border-bottom: 2px solid var(--backcolor-card-cont) ;
+    height: 90px;
+}
+

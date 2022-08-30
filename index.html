@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="principal-page" class="gift-card">
+        <div class="gift-card-container">
+            <h1 class="tittle">Tarjeta de regalo</h1>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, ullam illo minima architecto
+                non
+                assumenda ipsum quaerat deserunt sunt eius vitae autem voluptatem similique voluptas enim iure aut dolor
+                vero.</p>
+            <a href="#" id="openModal"> <button class="button-send" type="button" name="send">Enviar
+                    tarjeta</button></a>
+
+
+
+        </div>
+
+    </div>
+
+
+
+    <div class="option-card" id="modal-option-card">
+        <div class="container-option-card">
+            <div class="text-container-option-card">
+                <h1 class="tittle-container-option">Deseas enviar la tarjeta?</h1>
+                <p class="text-container-option">Escribe el nombre de la persona que quieres enviar la tarjeta</p>
+                <div class="container-text-bar-cont">
+                    <input class="text-bar-container-option" id="personName" type="text" name="name"
+                        placeholder="Escribe un nombre..." size="60" />
+                </div>
+                <p id="warn-message" class="error-message">* El campo está vacio, ingresa un nombre para enviar la
+                    tarjeta!</p>
+            </div>
+        </div>
+        <div class="buttons-option-container">
+            <a href="#" id="closeModal"> <button class="cancel-button-container-option" type="button"
+                    name="send">Cancelar</button>
+            </a>
+            <a href="#"><button id="saveName" class="continue-button-container-option" type="button"
+                    name="cancel">Continuar</button></a>
+        </div>
+    </div>
+
+    <div id="final-page" class="container-message-sent">
+        <div class="text-container-message-sent">
+            <h1 id="message-card-already-sent" class="tittle-message-sent">Tu tarjeta se envió exitosamente a!</h1>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
